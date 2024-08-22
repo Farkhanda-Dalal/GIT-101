@@ -1,0 +1,19 @@
+**Create Directory**
+mkdir <dir_name>
+
+**Create files in Directory**
+touch <dir_name/new_file_name>
+
+**Enter Directory**
+cd
+
+**Exit Directory**
+cd ..
+
+**Check Git Version**
+git --version
+
+**List all files in current directory**
+ls -a
+
+
