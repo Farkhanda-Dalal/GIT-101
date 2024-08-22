@@ -1,0 +1,9 @@
+Follow the following steps to create branches:
+1. git checkout -b <branch_name>
+2. git add <folder_name>/<file_name>/<folder_name/file_name>/.
+3. git commit -m <"message...">
+4. git push -u origin <curr_branch_name>
+5. git diff (optional)
+6. git checkout main
+7. git merge <target_branch_name>
+8. git push -u origin main
