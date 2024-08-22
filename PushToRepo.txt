@@ -1,0 +1,13 @@
+Follow the following steps to add files to a new repository:
+1. git init
+2. git add <folder_name>/<file_name>/<folder_name/file_name>/.
+3. git branch -M main
+4. git remote add origin <repo_url>
+5. git commit -m <"message....">
+6. git push -u origin main
+
+Follow the following steps to add files to an already repository:
+1. git add <folder_name>/<file_name>/<folder_name/file_name>/.
+2. git commit -m <"message....">
+3. git push -u origin main
+
