@@ -1,0 +1,72 @@
+git init
+**Initializes an existing directory as a Git repository**
+
+git clone <url>
+**Creates clone of a hosted repo on our local machine**
+
+git status
+**Gives status about the current status of a repo
+The status inclues:
+1. Current branch
+2. Modified Files
+3. Untracked Files 
+
+Possible status of files:
+Untracked: Never commited on repo
+Modified : Commites previously but new changes were made
+Staged   : Added(using git add command) but not commited yet
+**
+
+git add <folder_name>
+**Add a folder to repo**
+
+git add <folder_name/file_name>
+**Add a file in existing folder to repo**
+
+git add .
+**Add all files and folders in directory to the repo**
+
+git commit -m <"comment....">
+**Commits files which are staged by using git add command**
+
+git commit --allow-empty-message -m ""
+**Commits without adding comment for the commit**
+
+git branch
+**Displays list of all branches**
+
+git branch -M <branch_name>
+**Creates/Renames a branch at current commit**
+
+git checkout <branch_name>
+**Navigate through branch
+Go from 1 branch to another**
+
+git checkout -b <branch_name>
+**Create new branch**
+
+git branch -d <branch_name>
+**Delete branch
+Cannot delete current branch in which you are
+Use checkout to change branch and then delete**
+
+git remote add origin <repo_url>
+**Create origin to push your local changes to a remote server like GitHub**
+
+git diff <branch_name>
+**Check difference in files and folders in specified branch with curr branch**
+
+git merge <branch_name>
+**Merges specified branches code into current branch**
+
+git push -u origin <branch_name>
+**Pushes commited changes to online repo**
+
+git pull origin <branch_name>
+**Pull changes made in the repo**
+
+git restore --staged <file_name>
+**Undo add command by unstaging files staged by add command**
+
+
+
