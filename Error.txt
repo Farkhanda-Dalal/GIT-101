@@ -1,0 +1,28 @@
+**To solve the following error: **
+$ git push origin main
+To https://github.com/Farkhanda-Dalal/DSA-Practice.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Farkhanda-Dalal/DSA-Practice.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+**Use :**
+$ git pull origin main --allow-unrelated-histories
+
+**How --allow-unrelated-histories Solved the Problem:**
+The flag --allow-unrelated-histories tells Git to proceed with merging the two unrelated commit histories even though they don’t share a common ancestor. Here’s what it did:
+
+1. Fetch and Merge:
+Git fetched the latest changes from the remote repository (which included the README.md file).
+It then merged the unrelated commit histories into a single history using the ort strategy (the default merge strategy in recent Git versions).
+
+2. No Conflicts:
+Since there were no conflicting changes (your local repository didn’t have a README.md file, and the remote didn’t have files like Mathematics/ReverseNo.java), Git was able to merge the histories without any manual conflict resolution.
+
+3. Why It Worked:
+By using --allow-unrelated-histories, you explicitly allowed Git to combine two separate commit histories into one unified history.
+
+--Before: You had two separate histories—one local, one remote.
+--After the Pull with --allow-unrelated-histories: Git merged the two histories into one. The remote history (which contained a commit for README.md) and the local history (which had your work) were combined.
